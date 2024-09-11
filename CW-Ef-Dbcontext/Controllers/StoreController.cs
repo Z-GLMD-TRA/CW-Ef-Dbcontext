@@ -1,4 +1,4 @@
-﻿using CW_Ef_Dbcontext.Models;
+﻿using EFSample.DataAccess.Models;
 using EFSample.DataAccess.EfDAL;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;

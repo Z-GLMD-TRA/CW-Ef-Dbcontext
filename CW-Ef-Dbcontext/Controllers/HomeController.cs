@@ -1,4 +1,4 @@
-using CW_Ef_Dbcontext.Models;
+using EFSample.DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
