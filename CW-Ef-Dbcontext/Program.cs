@@ -1,4 +1,3 @@
-using CW_Ef_Dbcontext.Models;
 using EFSample.DataAccess.EfDAL;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +13,7 @@ namespace CW_Ef_Dbcontext
             builder.Services.AddControllersWithViews();
             //builder.Services.AddScoped<IEfDAL,EfDAL>();
             builder.Services.AddScoped<IEfDAL, EfDAL>();
-            builder.Services.AddDbContext<BikeStoreContext>();
+            builder.Services.AddDbContext<EFSample.DataAccess.Models.BikeStoreContext>();
 
             var app = builder.Build();
 

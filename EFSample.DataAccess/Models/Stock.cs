@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CW_Ef_Dbcontext.Models;
+namespace EFSample.DataAccess.Models;
 
 public partial class Stock
 {

@@ -1,5 +1,4 @@
-namespace CW_Ef_Dbcontext.Models
-{
+namespace EFSample.DataAccess.Models;{
     public class ErrorViewModel
     {
         public string? RequestId { get; set; }

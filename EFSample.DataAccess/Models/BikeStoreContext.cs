@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace CW_Ef_Dbcontext.Models;
+namespace EFSample.DataAccess.Models;
 
 public partial class BikeStoreContext : DbContext
 {
