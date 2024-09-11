@@ -9,15 +9,15 @@ namespace EFSample.DataAccess.EfDAL
     public class EfDAL : IEfDAL
     {
         private readonly BikeStoreContext _dbcontext;
-        //private readonly IDbConnection _connection;
-        public EfDAL(BikeStoreContext bikeStoreContext)
+
+        public EfDAL(BikeStoreContext dbcontext)
         {
-            _dbcontext = bikeStoreContext;
-            //_connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+            _dbcontext = dbcontext;
         }
 
         public async Task<IEnumerable<Store>> GetStores()
         {
+            
             return await _dbcontext.Stores.ToListAsync();
         }
     }

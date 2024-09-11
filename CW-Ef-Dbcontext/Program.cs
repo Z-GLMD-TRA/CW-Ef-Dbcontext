@@ -14,7 +14,7 @@ namespace CW_Ef_Dbcontext
             builder.Services.AddControllersWithViews();
             //builder.Services.AddScoped<IEfDAL,EfDAL>();
             builder.Services.AddScoped<IEfDAL, EfDAL>();
-            builder.Services.AddDbContext<BikeStoreContext>(opt=>opt.UseSqlServer());
+            builder.Services.AddDbContext<BikeStoreContext>();
 
             var app = builder.Build();
 
