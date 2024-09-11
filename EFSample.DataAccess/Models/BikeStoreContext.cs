@@ -6,9 +6,9 @@ namespace CW_Ef_Dbcontext.Models;
 
 public partial class BikeStoreContext : DbContext
 {
-    //public BikeStoreContext()
-    //{
-    //}
+    public BikeStoreContext()
+    {
+    }
 
     public BikeStoreContext(DbContextOptions<BikeStoreContext> options)
         : base(options)

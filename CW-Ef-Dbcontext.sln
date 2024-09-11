@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CW-Ef-Dbcontext", "CW-Ef-Dbcontext\CW-Ef-Dbcontext.csproj", "{376CCECF-88BE-46F1-B460-E195E1DD2F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW-Ef-PR", "CW-Ef-Dbcontext\CW-Ef-PR.csproj", "{376CCECF-88BE-46F1-B460-E195E1DD2F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{44658C6B-4F5B-4BBF-93FF-42C4550A0D30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFSample.DataAccess", "EFSample.DataAccess\EFSample.DataAccess.csproj", "{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F32A61D8-4281-4FFA-981F-418B24188C5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{376CCECF-88BE-46F1-B460-E195E1DD2F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376CCECF-88BE-46F1-B460-E195E1DD2F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376CCECF-88BE-46F1-B460-E195E1DD2F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{376CCECF-88BE-46F1-B460-E195E1DD2F04} = {F32A61D8-4281-4FFA-981F-418B24188C5C}
+		{998BC14C-B8D8-43C1-8F40-C2B9ABADCBAA} = {44658C6B-4F5B-4BBF-93FF-42C4550A0D30}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {828A40C0-66CA-4500-87E2-EC413D149AAC}

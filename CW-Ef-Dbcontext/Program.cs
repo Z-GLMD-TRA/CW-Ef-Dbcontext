@@ -1,4 +1,5 @@
 using CW_Ef_Dbcontext.Models;
+using EFSample.DataAccess.EfDAL;
 using Microsoft.EntityFrameworkCore;
 
 namespace CW_Ef_Dbcontext
@@ -11,7 +12,10 @@ namespace CW_Ef_Dbcontext
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<DbContext, BikeStoreContext>();
+            //builder.Services.AddScoped<IEfDAL,EfDAL>();
+            builder.Services.AddScoped<IEfDAL, EfDAL>();
+            builder.Services.AddDbContext<BikeStoreContext>(opt=>opt.UseSqlServer());
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
